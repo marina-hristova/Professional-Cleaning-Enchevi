@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Свържете се с Професионално почистване Енчеви във Варна. Направете запитване за почистване бързо и лесно.">
+    <meta name="keywords" content="контакти, запитване, почистване, фирма Енчеви, Варна, телефон">
+    <title>Контакти | Професионално Почистване Енчеви - Варна</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+                <img src="../../images/logo.png" alt="Лого Енчеви" class="brand-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Начало</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">За нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Галерия</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacts.html">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Свържете се с нас</h1>
+            <p class="lead">Тук сме, за да отговорим на вашите въпроси и да изготвим индивидуална оферта.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <form id="contactForm" method="POST" action="#" class="bg-white p-4 rounded shadow-sm border border-light">
+                    <fieldset>
+                        <legend class="fw-bold text-primary mb-4 border-bottom pb-2">Форма за запитване</legend>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label fw-bold">Име <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Въведете вашето име" required>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label fw-bold">Телефон <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="08XXXXXXXX" pattern="[0-9]{10}" title="Моля, въведете валиден 10-цифрен телефонен номер" required>
+                            </div>
+                            
+                            <div class="col-12">
+                                <label for="email" class="form-label fw-bold">Имейл адрес <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="example@email.com" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="serviceType" class="form-label fw-bold">Желана услуга</label>
+                                <select class="form-select" id="serviceType" name="serviceType">
+                                    <option value="Основно почистване">Основно почистване</option>
+                                    <option value="Абонаментно почистване">Абонаментно почистване</option>
+                                    <option value="Пране на мека мебел">Пране на мека мебел</option>
+                                    <option value="Почистване след ремонт">Почистване след ремонт</option>
+                                    <option value="Измиване на прозорци">Измиване на прозорци</option>
+                                    <option value="Друго">Друго...</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold d-block">Тип обект</label>
+                                <div class="form-check form-check-inline mt-2">
+                                    <input class="form-check-input" type="radio" name="propertyType" id="propHome" value="Дом" checked>
+                                    <label class="form-check-label" for="propHome">Дом/Апартамент</label>
+                                </div>
+                                <div class="form-check form-check-inline mt-2">
+                                    <input class="form-check-input" type="radio" name="propertyType" id="propOffice" value="Офис">
+                                    <label class="form-check-label" for="propOffice">Офис/Бизнес</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <label for="message" class="form-label fw-bold">Допълнителна информация <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Опишете накратко от какво имате нужда..." required></textarea>
+                            </div>
+
+                            <div class="col-12 mt-4 d-flex justify-content-between">
+                                <button type="reset" class="btn btn-outline-secondary px-4">Изчисти</button>
+                                <button type="submit" class="btn btn-primary custom-btn px-5">Изпрати запитване</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="bg-light p-4 rounded shadow-sm border h-100">
+                    <h3 class="fw-bold mb-4 text-primary">Контактна информация</h3>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 50px; height: 50px;">
+                            <i class="fa-solid fa-location-dot fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0 fw-bold">Адрес</h5>
+                            <p class="mb-0 text-muted">ул. Пеньо Пенев 6, гр. Варна</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 50px; height: 50px;">
+                            <i class="fa-solid fa-phone fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0 fw-bold">Телефон</h5>
+                            <p class="mb-0 text-muted"><a href="tel:0893683341" class="text-decoration-none text-muted">089 368 3341</a></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 50px; height: 50px;">
+                            <i class="fa-solid fa-envelope fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0 fw-bold">Имейл</h5>
+                            <p class="mb-0 text-muted"><a href="mailto:eliseyenchev@gmail.com" class="text-decoration-none text-muted">eliseyenchev@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <img src="../../images/map.png" alt="Карта с адреса на фирма Енчеви във Варна" class="img-fluid rounded shadow-sm border border-light">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="custom-footer text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">За контакти</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> ул. Пеньо Пенев 6, Варна, България</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i> <a href="tel:0893683341" class="text-white text-decoration-none">089 368 3341</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:eliseyenchev@gmail.com" class="text-white text-decoration-none">eliseyenchev@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Работно време</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Понеделник - Петък: 08:00 - 18:00</li>
+                        <li class="mb-2">Събота: По предварителна заявка</li>
+                        <li class="mb-2">Неделя: Почивен ден</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Последвайте ни</h5>
+                    <a href="https://www.facebook.com/profile.php?id=61580474927449" target="_blank" class="text-white me-3 fs-3"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://enchevipochistvane.com" target="_blank" class="text-white fs-3"><i class="fa-solid fa-globe"></i></a>
+                </div>
+            </div>
+            <hr class="mt-2 mb-3 border-light">
+            <div class="text-center">
+                <small>&copy; 2026 Професионално Почистване Енчеви. Всички права запазени.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        var contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            var clientName = document.getElementById('firstName').value;
+            var clientPhone = document.getElementById('phone').value;
+            var clientService = document.getElementById('serviceType').value;
+            try {
+                if(clientName !== "" && clientPhone !== "") {
+                    alert("Здравейте, " + clientName + "!\n\nВашето запитване за '" + clientService + "' е прието успешно.\nЩе се свържем с вас на телефон " + clientPhone + " възможно най-скоро.\n\nПоздрави,\nЕкипът на Енчеви");            
+                    contactForm.reset();
+                }
+            } catch(err) {
+                console.log("Възникна грешка: " + err.description);
+            }
+        });
+    </script>
+</body>
+</html>

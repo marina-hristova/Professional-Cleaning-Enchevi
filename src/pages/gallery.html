@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Разгледайте галерията със снимки Преди и След от Професионално почистване Енчеви.">
+    <meta name="keywords" content="галерия, преди и след, почистване, резултати, Енчеви">
+    <title>Галерия | Професионално Почистване Енчеви</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+                <img src="../../images/logo.png" alt="Лого Енчеви" class="brand-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Начало</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">За нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Галерия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Нашата Галерия</h1>
+            <p class="lead">Реални резултати "Преди и След"</p>
+        </div>
+    </header>
+
+    <main class="container my-5 overflow-hidden">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Вижте разликата сами</h2>
+            <p class="text-muted">Гордеем се с работата си. Плъзнете или изчакайте, за да разгледате нашите реализирани обекти.</p>
+        </div>
+
+        <div class="carousel-container">
+            <div class="scene">
+                <div class="carousel-3d">
+                <div class="carousel-face" style="background-image: url('../../images/1.jpg');"><span>Безупречно!</span></div>
+                <div class="carousel-face" style="background-image: url('../../images/2.jpg');"><span>До блясък!</span></div>
+                <div class="carousel-face" style="background-image: url('../../images/3.jpg');"><span>Свежест!</span></div>
+                <div class="carousel-face" style="background-image: url('../../images/4.jpg');"><span>Чистота!</span></div>
+                <div class="carousel-face" style="background-image: url('../../images/5.jpg');"><span>Преди / След</span></div>
+                <div class="carousel-face" style="background-image: url('../../images/6.jpg');"><span>Професионално!</span></div>
+                <div class="carousel-face" style="background-image: url('../../images/7.jpg');"><span>Внимание към детайла!</span></div>
+                <div class="carousel-face" style="background-image: url('../../images/8.jpg');"><span>Като нов!</span></div>
+                <div class="carousel-face" style="background-image: url('../../images/9.jpg');"><span>Резултатът!</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 mt-5 pt-5 border-top" id="dynamic-gallery">
+        </div>
+    </main>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Затвори" style="background-color: white; opacity: 0.8;"></button>
+                </div>
+                <div class="modal-body text-center pt-0">
+                    <img id="modalImage" src="" class="img-fluid rounded shadow-lg" alt="Уголемена снимка">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="custom-footer text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">За контакти</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> ул. Пеньо Пенев 6, Варна, България</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i> <a href="tel:0893683341" class="text-white text-decoration-none">089 368 3341</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:eliseyenchev@gmail.com" class="text-white text-decoration-none">eliseyenchev@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Работно време</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Понеделник - Петък: 08:00 - 18:00</li>
+                        <li class="mb-2">Събота: По предварителна заявка</li>
+                        <li class="mb-2">Неделя: Почивен ден</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Последвайте ни</h5>
+                    <a href="https://www.facebook.com/profile.php?id=61580474927449" target="_blank" class="text-white me-3 fs-3"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://enchevipochistvane.com" target="_blank" class="text-white fs-3"><i class="fa-solid fa-globe"></i></a>
+                </div>
+            </div>
+            <hr class="mt-2 mb-3 border-light">
+            <div class="text-center">
+                <small>&copy; 2026 Професионално Почистване Енчеви. Всички права запазени.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        var galleryContainer = document.getElementById('dynamic-gallery');
+        
+        var htmlContent = '<div class="col-12 text-center mb-4"><h3 class="fw-bold">Още от нашата работа</h3><p class="text-muted">Кликнете върху снимка, за да я разгледате</p></div>';
+
+        for (var i = 10; i <= 35; i++) {
+            htmlContent += '<div class="col-sm-6 col-md-4 col-lg-3">' +
+                               '<div class="gallery-grid-item shadow-sm h-100" style="cursor: pointer;" onclick="openModal(\'../../images/' + i + '.jpg\')">' +
+                                   '<img src="../../images/' + i + '.jpg" alt="Резултат от почистване ' + i + '" class="img-fluid rounded" loading="lazy">' +
+                               '</div>' +
+                           '</div>';
+        }
+
+        galleryContainer.innerHTML = htmlContent;
+        function openModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            var myModal = new bootstrap.Modal(document.getElementById('imageModal'));
+            myModal.show();
+        }
+    </script>
+</body>
+</html>
